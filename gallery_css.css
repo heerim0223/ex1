@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+/*menubar*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #263343;
+    padding: 8px 12px;
+}
+.navbar{
+    font-size: 14px;
+    color: aliceblue;
+}
+.navbar_logo i {
+    color: #EAB3AB;
+}
+.navbar_menu{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+.navbar_menu li {
+    padding: 8px 12px;
+}
+.navbar_menu li :hover {
+    background-color: aliceblue;
+    color: #263343;
+    border-radius: 4px;
+}
+.navbar_links{
+    list-style: none;
+    color: aliceblue;
+    display: flex;
+    padding-left: 0;
+}
+.navbar_links li{
+    padding: 8px 12px;
+}
+@media screen and (max-width: 768px) {
+    .navar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar_menu{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .navbar_menu li{
+        width: 100%;
+        text-align: center;
+    }
+    .navbar_links {
+        justify-self: last;
+        width: 100%;
+    }
+}
+/*content*/
+
+#header{
+    font-size: 30px;
+    text-decoration: none;
+}
+.top{
+    margin: 30px;
+}
+.top2{
+    border-bottom: solid 3px gray;
+}
+.top3{
+    margin: 0;
+    padding: 30px;
+}
+.jb {
+    box-sizing: border-box;
+    width: 64px;
+    height: 64px;
+    margin: 10px 0px;
+    background-color:cadetblue;
+    border-radius: 100%;
+    transition: all ease 2s 0s;
+    }
+input:checked ~ .jb {
+    width: 100%;
+    height: 500px;
+    border-radius: 0;
+    background-color: cadetblue;
+    }
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    border-bottom: solid 3px gray;
+}
+#book-img{
+    width: 50%;
+    height: 60%;
+    margin: 0;
+    padding: 60px;
+}
+.myClass:hover {
+    transform: rotateZ(45deg);
+    transition: transform 1s ease;
+}
+.high{
+    font-size: 25px;
+    background-color: #B9DEDF; 
+    color: #312E41;
+    margin: 0;
+    padding-left: 10px;
+}
+#link{
+    background-color: #65A1A0;
+    margin: 0;
+    padding: 3px;
+}
